@@ -29,13 +29,17 @@ namespace BrokenSalvagedMechs {
                     mechDef.CenterTorso.CurrentInternalStructure = 0f;
                     mechDef.RightTorso.CurrentInternalStructure = 0f;
                     mechDef.LeftTorso.CurrentInternalStructure = 0f;
+                    foreach(MechComponentRef comp in mechDef.Inventory) {
+                        comp.DamageLevel = ComponentDamageLevel.Destroyed;
+                    }
                     __instance.AddMech(0, mechDef, true, false, true, null);
                     SimGameInterruptManager interrupt = (SimGameInterruptManager)ReflectionHelper.GetPrivateField(__instance, "interruptQueue");
                     interrupt.DisplayIfAvailable();
                     __instance.MessageCenter.PublishMessage(new SimGameMechAddedMessage(mechDef, true));
-                    return;
                 }
-                __instance.AddItemStat(id, "MECHPART", false);
+                else {
+                    __instance.AddItemStat(id, "MECHPART", false);
+                }
             }
             catch (Exception e) {
                 Logger.LogError(e);
