@@ -1,5 +1,5 @@
 # BrokenSalvagedMechs
-BattleTech mod (using BTML) that makes mechs, that have been assembled by parts, appear in the mechbay completly broken.
+BattleTech mod (using BTML) that makes mechs, that have been assembled by parts, spawn in the mechbay completly broken.
 
 ## Requirements
 ** Warning: Uses the experimental BTML mod loader that might change, come here again to check for updates **
