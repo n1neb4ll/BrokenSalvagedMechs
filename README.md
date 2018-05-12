@@ -12,7 +12,7 @@ BattleTech mod (using BTML) that makes mechs, that have been assembled by parts,
 
 ## Download
 
-Downloads can be found on [github](https://github.com/Morphyum/MechMaintenanceByCost/releases).
+Downloads can be found on [github](https://github.com/Morphyum/BrokenSalvagedMechs/releases).
 
 ## Settings
 Setting | Type | Default | Description
