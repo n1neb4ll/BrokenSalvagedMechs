@@ -23,29 +23,46 @@ namespace BrokenSalvagedMechs {
                         ReflectionHelper.InvokePrivateMethode(__instance, "RemoveItemStat", new object[] { id, "MECHPART", false });
                     }
                     MechDef mechDef = new MechDef(__instance.DataManager.MechDefs.Get(id), __instance.GenerateSimGameUID());
-                    if (!settings.HeadRepaired) {
+                    Random rng = new Random();
+                    if (!settings.HeadRepaired && (!settings.RandomRepair || rng.NextDouble() > settings.RandomRepairChance)) {
                         mechDef.Head.CurrentInternalStructure = 0f;
+                    } else if (settings.RandomDamageOnRepaired) {
+                        mechDef.Head.CurrentInternalStructure = Math.Max(1f, mechDef.Head.CurrentInternalStructure * (float)rng.NextDouble());
                     }
-                    if (!settings.LeftArmRepaired) {
+                    if (!settings.LeftArmRepaired && (!settings.RandomRepair || rng.NextDouble() > settings.RandomRepairChance)) {
                         mechDef.LeftArm.CurrentInternalStructure = 0f;
+                    } else if (settings.RandomDamageOnRepaired) {
+                        mechDef.LeftArm.CurrentInternalStructure = Math.Max(1f, mechDef.LeftArm.CurrentInternalStructure * (float)rng.NextDouble());
                     }
-                    if (!settings.RightArmRepaired) {
+                    if (!settings.RightArmRepaired && (!settings.RandomRepair || rng.NextDouble() > settings.RandomRepairChance)) {
                         mechDef.RightArm.CurrentInternalStructure = 0f;
+                    } else if (settings.RandomDamageOnRepaired) {
+                        mechDef.RightArm.CurrentInternalStructure = Math.Max(1f, mechDef.RightArm.CurrentInternalStructure * (float)rng.NextDouble());
                     }
-                    if (!settings.LeftLegRepaired) {
+                    if (!settings.LeftLegRepaired && (!settings.RandomRepair || rng.NextDouble() > settings.RandomRepairChance)) {
                         mechDef.LeftLeg.CurrentInternalStructure = 0f;
+                    } else if (settings.RandomDamageOnRepaired) {
+                        mechDef.LeftLeg.CurrentInternalStructure = Math.Max(1f, mechDef.LeftLeg.CurrentInternalStructure * (float)rng.NextDouble());
                     }
-                    if (!settings.RightLegRepaired) {
+                    if (!settings.RightLegRepaired && (!settings.RandomRepair || rng.NextDouble() > settings.RandomRepairChance)) {
                         mechDef.RightLeg.CurrentInternalStructure = 0f;
+                    } else if (settings.RandomDamageOnRepaired) {
+                        mechDef.RightLeg.CurrentInternalStructure = Math.Max(1f, mechDef.RightLeg.CurrentInternalStructure * (float)rng.NextDouble());
                     }
-                    if (!settings.CentralTorsoRepaired) {
+                    if (!settings.CentralTorsoRepaired && (!settings.RandomRepair || rng.NextDouble() > settings.RandomRepairChance)) {
                         mechDef.CenterTorso.CurrentInternalStructure = 0f;
+                    } else if (settings.RandomDamageOnRepaired) {
+                        mechDef.CenterTorso.CurrentInternalStructure = Math.Max(1f, mechDef.CenterTorso.CurrentInternalStructure * (float)rng.NextDouble());
                     }
-                    if (!settings.RightTorsoRepaired) {
+                    if (!settings.RightTorsoRepaired && (!settings.RandomRepair || rng.NextDouble() > settings.RandomRepairChance)) {
                         mechDef.RightTorso.CurrentInternalStructure = 0f;
+                    } else if (settings.RandomDamageOnRepaired) {
+                        mechDef.RightTorso.CurrentInternalStructure = Math.Max(1f, mechDef.RightTorso.CurrentInternalStructure * (float)rng.NextDouble());
                     }
-                    if (!settings.LeftTorsoRepaired) {
+                    if (!settings.LeftTorsoRepaired && (!settings.RandomRepair || rng.NextDouble() > settings.RandomRepairChance)) {
                         mechDef.LeftTorso.CurrentInternalStructure = 0f;
+                    } else if (settings.RandomDamageOnRepaired) {
+                        mechDef.LeftTorso.CurrentInternalStructure = Math.Max(1f, mechDef.LeftTorso.CurrentInternalStructure * (float)rng.NextDouble());
                     }
                     foreach (MechComponentRef comp in mechDef.Inventory) {
                         if (mechDef.IsLocationDestroyed(comp.MountedLocation) || settings.NoItems) {
