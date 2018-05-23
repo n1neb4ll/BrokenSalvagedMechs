@@ -26,6 +26,9 @@ RightTorsoRepaired | bool | default false | Right torso will appear in mechbay a
 LeftLegRepaired | bool | default false | Left leg will appear in mechbay already repaired.
 RightLegRepaired | bool | default false | Right leg will appear in mechbay already repaired.
 NoItems | bool | default true | Items from the standard layout will be appear in mechbay destroyed, even when the part is set to beeing repaired.
+RandomRepair | bool | default false | Repair random parts in addition to repaired parts set above.
+RandomRepairChance | float | default 0.5 | Set value between 0 and 1 as a chance that parts will be repaired.
+RandomDamageOnRepaired | bool | default true | Repaired parts are not pristine condition. Instead they have random amount of damage to them.
     
 ## Install
 - After installing BTML, put  everything into \BATTLETECH\Mods\ folder.

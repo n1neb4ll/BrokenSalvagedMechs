@@ -9,5 +9,8 @@
         public bool LeftLegRepaired = false;
         public bool RightLegRepaired = false;
         public bool NoItems = true;
+        public bool RandomRepair = false;
+        public float RandomRepairChance = 0.5f;
+        public bool RandomDamageOnRepaired = true;
     }
 }
