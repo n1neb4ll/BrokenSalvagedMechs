@@ -1,10 +1,11 @@
 # BrokenSalvagedMechs
-BattleTech mod (using BTML) that makes mechs, that have been assembled by parts, spawn in the mechbay completly broken.
+BattleTech mod (using ModTek) that makes mechs, that have been assembled by parts, spawn in the mechbay completly broken.
 
 ## Requirements
 ** Warning: Uses the experimental BTML mod loader that might change, come here again to check for updates **
 
 * install [BattleTechModLoader](https://github.com/Mpstark/BattleTechModLoader/releases) using the [instructions here](https://github.com/Mpstark/BattleTechModLoader)
+* install [ModTek](https://github.com/Mpstark/ModTek/releases) using the [instructions here](https://github.com/Mpstark/ModTek)
 
 ## Features
 - Assembled mechs from parts appear in your mechbay broken.
@@ -28,7 +29,7 @@ RightLegRepaired | bool | default false | Right leg will appear in mechbay alrea
 NoItems | bool | default true | Items from the standard layout will be appear in mechbay destroyed, even when the part is set to beeing repaired.
 RandomRepair | bool | default false | Repair random parts in addition to repaired parts set above.
 RandomRepairChance | float | default 0.5 | Set value between 0 and 1 as a chance that parts will be repaired.
-RandomDamageOnRepaired | bool | default true | Repaired parts are not pristine condition. Instead they have random amount of damage to them.
+RandomDamageOnRepaired | bool | default false | Repaired parts are not pristine condition. Instead they have random amount of damage to them.
     
 ## Install
 - After installing BTML, put  everything into \BATTLETECH\Mods\ folder.
