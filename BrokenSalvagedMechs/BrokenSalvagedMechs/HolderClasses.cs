@@ -1,7 +1,5 @@
-﻿namespace BrokenSalvagedMechs
-{
-    public class Settings
-    {
+﻿namespace BrokenSalvagedMechs {
+    public class Settings {
         public bool HeadRepaired = false;
         public bool LeftArmRepaired = false;
         public bool RightArmRepaired = false;
