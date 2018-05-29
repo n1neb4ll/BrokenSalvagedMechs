@@ -71,7 +71,7 @@ namespace BrokenSalvagedMechs {
                     // each component is checked and destroyed if the settings are set that way
                     // if RepairMechComponents is true it will variably make components either functional, nonfunctional, or destroyed based on settings
                     foreach (MechComponentRef mechComponent in mechDef.Inventory) {
-                        if (mechDef.IsLocationDestroyed(mechComponent.MountedLocation)) {
+                        if (!settings.RepairMechComponents || mechDef.IsLocationDestroyed(mechComponent.MountedLocation)) {
                             mechComponent.DamageLevel = ComponentDamageLevel.Destroyed;
                             continue;
                         }
