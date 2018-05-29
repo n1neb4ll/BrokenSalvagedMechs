@@ -8,9 +8,11 @@
         public bool RightTorsoRepaired = false;
         public bool LeftLegRepaired = false;
         public bool RightLegRepaired = false;
-        public bool NoItems = true;
-        public bool RandomRepair = false;
-        public float RandomRepairChance = 0.5f;
-        public bool RandomDamageOnRepaired = true;
+        public bool RepairMechLimbs = false;
+        public bool RandomStructureOnRepairedLimbs = false;
+        public bool RepairMechComponents = false;
+        public float RepairMechLimbsChance = 0.75f;
+        public float RepairComponentsFunctionalChance = 0.25f;
+        public float RepairComponentsNonFunctionalChance = 0.5f;
     }
 }
