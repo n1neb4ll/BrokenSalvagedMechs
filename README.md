@@ -18,18 +18,22 @@ Downloads can be found on [github](https://github.com/Morphyum/BrokenSalvagedMec
 ## Settings
 Setting | Type | Default | Description
 --- | --- | --- | ---
-HeadRepaired | bool | default false | Head will appear in mechbay already repaired.
-LeftArmRepaired | bool | default false | Left arm will appear in mechbay already repaired.
-RightArmRepaired | bool | default false | Right arm will appear in mechbay already repaired.
-CentralTorsoRepaired | bool | default false | Center torso will appear in mechbay already repaired.
-LeftTorsoRepaired | bool | default false | Left torso will appear in mechbay already repaired.
-RightTorsoRepaired | bool | default false | Right torso will appear in mechbay already repaired.
-LeftLegRepaired | bool | default false | Left leg will appear in mechbay already repaired.
-RightLegRepaired | bool | default false | Right leg will appear in mechbay already repaired.
-NoItems | bool | default true | Items from the standard layout will be appear in mechbay destroyed, even when the part is set to beeing repaired.
-RandomRepair | bool | default false | Repair random parts in addition to repaired parts set above.
-RandomRepairChance | float | default 0.5 | Set value between 0 and 1 as a chance that parts will be repaired.
-RandomDamageOnRepaired | bool | default false | Repaired parts are not pristine condition. Instead they have random amount of damage to them.
+HeadRepaired | bool | default false | Head has a 100% chance to appear in mechbay already repaired.
+LeftArmRepaired | bool | default false | Left arm has a 100% chance to appear in mechbay already repaired.
+RightArmRepaired | bool | default false | Right arm has a 100% chance to appear in mechbay already repaired.
+CentralTorsoRepaired | bool | default false | Center torso has a 100% chance to appear in mechbay already repaired.
+LeftTorsoRepaired | bool | default false | Left torso has a 100% chance to appear in mechbay already repaired.
+RightTorsoRepaired | bool | default false | Right torso has a 100% chance to appear in mechbay already repaired.
+LeftLegRepaired | bool | default false | Left leg has a 100% chance to appear in mechbay already repaired.
+RightLegRepaired | bool | default false | Right leg has a 100% chance to appear in mechbay already repaired.
+RepairMechLimbs | bool | default false | Activate random repair chance for limps not set to true above.
+RepairMechLimbsChance | float | default 0.75 | The chance for each limp to be repaired.
+RandomStructureOnRepairedLimbs | bool | default false | Will make repaired limps spawn with a random number of sctructure points left.
+RepairMechComponents | bool | default false | Toggles if the mech spawns with or without it's component(weapons and so on) repaired or destroyed.
+RepairComponentsFunctionalThreshold | float | default 0.25 | Chance any repaired componant has to be completely repaired when RepairMechComponents is set to true.
+RepairComponentsNonFunctionalThreshold | float | default 0.5 | Chance any repaired componant has to be broken(but repairable) when RepairMechComponents is set to true.
+
+Every componant that is neither Functional nor NonFunctional will be destroyed even so you set RepairMechComponents to true.
     
 ## Install
 - After installing BTML, put  everything into \BATTLETECH\Mods\ folder.
