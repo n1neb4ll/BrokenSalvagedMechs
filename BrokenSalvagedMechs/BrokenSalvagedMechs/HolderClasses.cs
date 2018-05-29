@@ -8,7 +8,6 @@
         public bool RightTorsoRepaired = false;
         public bool LeftLegRepaired = false;
         public bool RightLegRepaired = false;
-        public bool SpecifiedLimbsUndamaged = false;
         public bool RepairMechLimbs = false;
         public bool RandomStructureOnRepairedLimbs = false;
         public bool RepairMechComponents = false;
