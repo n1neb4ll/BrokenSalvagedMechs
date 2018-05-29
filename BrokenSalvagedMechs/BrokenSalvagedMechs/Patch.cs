@@ -76,9 +76,10 @@ namespace BrokenSalvagedMechs {
                             continue;
                         }
                         if (settings.RepairMechComponents) {
-                            if (rng.NextDouble() <= settings.RepairComponentsFunctionalChance)
+                            double repairRoll = rng.NextDouble();
+                            if (repairRoll <= settings.RepairComponentsFunctionalThreshold)
                                 mechComponent.DamageLevel = ComponentDamageLevel.Functional;
-                            else if (rng.NextDouble() <= settings.RepairComponentsNonFunctionalChance)
+                            else if (repairRoll <= settings.RepairComponentsNonFunctionalThreshold)
                                 mechComponent.DamageLevel = ComponentDamageLevel.NonFunctional;
                             else mechComponent.DamageLevel = ComponentDamageLevel.Destroyed;
                         }
