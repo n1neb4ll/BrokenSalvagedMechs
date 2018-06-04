@@ -7,7 +7,7 @@ namespace BrokenSalvagedMechs {
 
         public static Settings LoadSettings() {
             try {
-                using (StreamReader r = new StreamReader("mods/BrokenSalvagedMechs/settings.json")) {
+                using (StreamReader r = new StreamReader($"{BrokenSalvagedMechs.ModDirectory}/settings.json")) {
                     string json = r.ReadToEnd();
                     return JsonConvert.DeserializeObject<Settings>(json);
                 }

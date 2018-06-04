@@ -1,0 +1,18 @@
+{
+		"HeadRepaired" : false,
+        "LeftArmRepaired" : false,
+        "RightArmRepaired" : false,
+        "CentralTorsoRepaired" : false,
+        "LeftTorsoRepaired" : false,
+        "RightTorsoRepaired" : false,
+        "LeftLegRepaired" : false,
+        "RightLegRepaired" : false,
+
+        "RepairMechLimbs" : true,
+        "RepairMechLimbsChance" : 0.65,
+        "RandomStructureOnRepairedLimbs" : true,
+
+        "RepairMechComponents" : true,
+        "RepairComponentsFunctionalThreshold" : 0.25,
+        "RepairComponentsNonFunctionalThreshold" : 0.5
+}
