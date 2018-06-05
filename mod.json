@@ -1,0 +1,12 @@
+{
+    "Name": "BrokenSalvagedMechs",
+    "Enabled": true,
+
+    "Version": "v1.1",
+    "Description": "Makes mechs, that have been assembled by parts, spawn in the mechbay completly broken.",
+    "Author": "Morphyum",
+    "Website": "https://github.com/Morphyum/BrokenSalvagedMechs",
+    "Contact": "",
+	
+	"DLL": "BrokenSalvagedMechs.dll",
+}
