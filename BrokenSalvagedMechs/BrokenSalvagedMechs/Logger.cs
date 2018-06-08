@@ -1,9 +1,9 @@
 ﻿using System;
 using System.IO;
 
-namespace BrokenSalvagedMechs {
+namespace AdjustedMechAssembly {
     public class Logger {
-        static string filePath = $"{BrokenSalvagedMechs.ModDirectory}/Log.txt";
+        static string filePath = $"{AdjustedMechAssembly.ModDirectory}/Log.txt";
         public static void LogError(Exception ex) {
             using (StreamWriter writer = new StreamWriter(filePath, true)) {
                 writer.WriteLine("Message :" + ex.Message + "<br/>" + Environment.NewLine + "StackTrace :" + ex.StackTrace +

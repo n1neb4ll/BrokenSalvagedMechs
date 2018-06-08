@@ -7,8 +7,8 @@
     <ProjectGuid>{CE7EACD1-9998-4480-B70E-476330CA7453}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BrokenSalvagedMechs</RootNamespace>
-    <AssemblyName>BrokenSalvagedMechs</AssemblyName>
+    <RootNamespace>AdjustedMechAssembly</RootNamespace>
+    <AssemblyName>AdjustedMechAssembly</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -53,7 +53,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BrokenSalvagedMechs.cs" />
+    <Compile Include="AdjustedMechAssembly.cs" />
     <Compile Include="Helper.cs" />
     <Compile Include="HolderClasses.cs" />
     <Compile Include="Logger.cs" />

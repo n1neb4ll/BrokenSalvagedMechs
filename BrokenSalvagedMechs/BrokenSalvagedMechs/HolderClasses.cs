@@ -1,4 +1,4 @@
-﻿namespace BrokenSalvagedMechs {
+﻿namespace AdjustedMechAssembly {
     public class Settings {
         public bool HeadRepaired = false;
         public bool LeftArmRepaired = false;

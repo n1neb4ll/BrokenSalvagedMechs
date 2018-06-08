@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Reflection;
 
-namespace BrokenSalvagedMechs {
+namespace AdjustedMechAssembly {
     public static class ReflectionHelper {
         
         public static object InvokePrivateMethode(object instance, string methodname, object[] parameters) {
