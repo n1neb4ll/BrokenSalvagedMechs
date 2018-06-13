@@ -11,7 +11,7 @@ BattleTech mod (using ModTek) that makes mechs, that have been assembled by part
 
 ## Download
 
-Downloads can be found on [github](https://github.com/Morphyum/BrokenSalvagedMechs/releases).
+Downloads can be found on [github](https://github.com/Morphyum/AdjustedMechAssembly/releases).
 
 ## Settings
 Setting | Type | Default | Description
@@ -31,10 +31,12 @@ RepairMechComponents | bool | default false | Toggles if the mech spawns with or
 RepairComponentsFunctionalThreshold | float | default 0.25 | Chance any repaired componant has to be completely repaired when RepairMechComponents is set to true.
 RepairComponentsNonFunctionalThreshold | float | default 0.5 | Chance any repaired componant has to be broken(but repairable) when RepairMechComponents is set to true.
 AssembleVariants | bool | default true | Mechs of the same base model will now be assembled when the max partcount is reached, the actual mech that gets assembled is chance based with more parts = higher chance.
+AssembleMostParts | bool | default true | Variants will be assembled as the mech with the most parts instead of the chance based system.
+VariantExceptions | List<string> | default [] | List of mechids that will behave like vanilla and not be used for variant assembly. example ["mechdef_atlas_AS7-D","mechdef_awesome_AWS-8Q"]
 
 Every componant that is neither Functional nor NonFunctional will be destroyed even so you set RepairMechComponents to true.
     
 ## Install
-- After installing BTML, put  everything into \BATTLETECH\Mods\ folder.
+- After installing BTML and ModTek, put  everything into \BATTLETECH\Mods\ folder.
 - If you want different settings set it in the settings.json.
 - Start the game.
