@@ -1,4 +1,4 @@
-﻿namespace BrokenSalvagedMechs {
+﻿namespace AdjustedMechAssembly {
     public class Settings {
         public bool HeadRepaired = false;
         public bool LeftArmRepaired = false;
@@ -16,5 +16,7 @@
         public bool RepairMechComponents = false;
         public float RepairComponentsFunctionalThreshold = 0.25f;
         public float RepairComponentsNonFunctionalThreshold = 0.5f;
+
+        public bool AssembleVariants = true;
     }
 }

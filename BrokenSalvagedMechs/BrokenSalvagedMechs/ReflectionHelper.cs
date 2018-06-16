@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Reflection;
 
-namespace BrokenSalvagedMechs {
+namespace AdjustedMechAssembly {
     public static class ReflectionHelper {
         
         public static object InvokePrivateMethode(object instance, string methodname, object[] parameters) {
@@ -14,12 +14,6 @@ namespace BrokenSalvagedMechs {
             Type type = instance.GetType();
             MethodInfo methodInfo = type.GetMethod(methodname, BindingFlags.NonPublic | BindingFlags.Instance, null, types, null);
             return methodInfo.Invoke(instance, parameters);
-        }
-
-        public static void SetPrivateProperty(object instance, string propertyname, object value) {
-            Type type = instance.GetType();
-            PropertyInfo property = type.GetProperty(propertyname, BindingFlags.NonPublic | BindingFlags.Instance);
-            property.SetValue(instance, value);
         }
 
         public static void SetPrivateField(object instance, string fieldname, object value) {

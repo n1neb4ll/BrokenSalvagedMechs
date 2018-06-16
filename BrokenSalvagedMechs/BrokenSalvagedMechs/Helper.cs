@@ -2,12 +2,12 @@
 using System;
 using System.IO;
 
-namespace BrokenSalvagedMechs {
+namespace AdjustedMechAssembly {
     public class Helper {
 
         public static Settings LoadSettings() {
             try {
-                using (StreamReader r = new StreamReader($"{BrokenSalvagedMechs.ModDirectory}/settings.json")) {
+                using (StreamReader r = new StreamReader($"{AdjustedMechAssembly.ModDirectory}/settings.json")) {
                     string json = r.ReadToEnd();
                     return JsonConvert.DeserializeObject<Settings>(json);
                 }
